@@ -1,14 +1,24 @@
-这里只会存放两个版本以前用的策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
-
 ---------------------------
 警告!
 ---------------------------
 使用SmartBot软件违反了了“暴雪®战网最终用户许可协议”。
 
 一旦您从此处下载并使用策略文件，视为您接受对使用策略文件的负全部责任，并证明您完全了解并承担使用所造成的包括违反“暴雪®战网最终用户许可协议”在内的一切后果。
+
+如果您不接受所造成的后果请勿下载和复制此代码库的任何文件及代码。
 ---------------------------
 
-this only put old profile who i used to help wirmate update SmartBot AI
+---------------------------
+Warning !
+---------------------------
+Using this software is against 'Activision Blizzard Inc.' TOS/EULA.
+
+Are you sure that you want to continue ? By clicking yes, you accept to take the full responsibility on your usage of this software and you certify that you have full knowledge that the use of this software can lead to a rupture of your personal contract with 'Activision Blizzard Inc.'
+---------------------------
+
+这里只会存放两个版本以前用的策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
+
+this only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
 
 this only put 3 month or 2 version ago's version. The newest profile was CHARGE!!
 
@@ -34,14 +44,6 @@ How can I get the newest profile?
 	>[Click here to Download OICQ/QQ For iPhone](https://itunes.apple.com/cn/app/id710380093?mt=8)
 	
 	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
-
----------------------------
-Warning !
----------------------------
-Using this software is against 'Activision Blizzard Inc.' TOS/EULA.
-
-Are you sure that you want to continue ? By clicking yes, you accept to take the full responsibility on your usage of this software and you certify that you have full knowledge that the use of this software can lead to a rupture of your personal contract with 'Activision Blizzard Inc.'
----------------------------
 
  * https://github.com/Waldo-Schaeffer
  * https://gitee.com/m586/Smartbot-Profile
