@@ -15,5 +15,6 @@ How to know what profile or rar used for what deck?
 How can I get the newest profile?
 
 1. If you can't speak Chinese you can use English to send a E-mail to me to advisory / consultative. my E-mail is administrator@sunguanqi.com.
+
 [Click here to send E-mail to me](mailto:administrator@sunguanqi.com) "Do not send spam to me!"
 2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 1102704028 to dvisory / consultative.
