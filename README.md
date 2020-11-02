@@ -4,12 +4,11 @@ this only put old profile who i used to help wirmate update SmartBot AI
 
 this only put 3 month or 2 version ago's version. The newest profile was CHARGE!!
 
-![Profession Name Table](./PCC.png)
-
 How to know what profile or rar used for what deck?
 
 1. Use Google Translate to translate filename without last word. For example: 祈求牧==>祈求==Google Translate==>Invoke
 2. Use last word find profession in The Image. For example: 祈求牧==>牧==>牧师==>Preist
+![Profession Name Table](./PCC.png)
 3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Preist==>Invoke Preist
 4. Some deck need change words with means.  For example: Invoke Preist==>Galakrond always need Invoke==>Galakrond Preist
 
