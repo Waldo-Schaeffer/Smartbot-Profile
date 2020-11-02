@@ -1,4 +1,4 @@
-这里只会存放两个版本以前用的策略文件和所有版本弃坑的策略
+这里只会存放两个版本以前用的策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
 
 this only put old profile who i used to help wirmate update SmartBot AI
 
@@ -32,3 +32,9 @@ How to know what profile or rar used for what deck?
 2. Use last word find profession in The above table. For example: 祈求牧==>牧==>牧师==>Preist
 3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Preist==>Invoke Preist
 4. Some deck need change words with means.  For example: Invoke Preist==>Galakrond always need Invoke==>Galakrond Preist
+
+How can I get the newest profile?
+
+1. If you can't speak chinese you can use English to send a E-mail to me. my E-mail is administrator@sunguanqi.com.
+[Click here to send E-mail to me](mailto:administrator@sunguanqi.com)
+
