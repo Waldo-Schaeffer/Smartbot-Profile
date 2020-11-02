@@ -23,6 +23,6 @@ How can I get the newest profile?
 	
 	>[Click here to Download OICQ/QQ For Android](https://down.qq.com/qqweb/QQ_1/android_apk/Android_6.0.3.6604_537064871.apk)
 	
-	>[Click here to Download OICQ/QQ For Iphone](https://itunes.apple.com/cn/app/id710380093?mt=8)
+	>[Click here to Download OICQ/QQ For iPhone](https://itunes.apple.com/cn/app/id710380093?mt=8)
 	
 	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
