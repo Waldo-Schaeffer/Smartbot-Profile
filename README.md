@@ -33,7 +33,7 @@ How to know what profile or rar used for what deck?
 How can I get the newest profile?
 
 1. If you can't speak Chinese you can use English to send a E-mail to me to advisory / consultative. my E-mail is administrator@sunguanqi.com.
-	>[Click here to send E-mail to me](mailto:administrator@sunguanqi.com) "Do not send spam to me!!!"
+	>[Click here to send me an E-mail](mailto:administrator@sunguanqi.com) "Do not send spam to me!!!"
 2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 1102704028 to dvisory / consultative.
 	>[Click here to Download OICQ/QQ Page](https://im.qq.com/download/)
 	
@@ -45,8 +45,9 @@ How can I get the newest profile?
 	
 	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
 
+ * 版权信息
  * https://github.com/Waldo-Schaeffer
  * https://gitee.com/m586/Smartbot-Profile
  * Copyleft 2016 - 2020 SunGuanqi. All Lefts Reserved
- * Attribution 4.0 International (Attribution 4.0 International (CC BY 4.0)
+ * Attribution 4.0 International (CC BY 4.0)
  * 使用时请遵守知识共享署名 4.0 国际许可协议，且不可删除本版权信息
