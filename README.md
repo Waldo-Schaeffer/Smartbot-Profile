@@ -4,42 +4,34 @@ this only put old profile who i used to help wirmate update SmartBot AI
 
 this only put 3 month or 2 version ago's version. The newest profile was CHARGE!!
 
-Profession/Chinese Name(Chinese Abbreviation Name)
-
-Warrior		战士（战）
-
-Mage		法师（法）
-
-Preist		牧师（牧）
-
-Rouge		潜行者/盗贼（贼）
-
-Paladin		骑士（骑）
-
-Warlock		术士（术）
-
-Druid		德鲁伊（德）
-
-Hunter		猎人（猎）
-
-Shaman		萨满（萨）
-
-Demo Hunter	恶魔猎手（瞎）
-
 +-------------+--------------+----------------------------+
+
 | Profession  | Chinese Name | Chinese Abbreviation Name  |
+
 +-------------+--------------+----------------------------+
+
 |   Warrior   |     战士     |             战             |
+
 |    Mage     |     法师     |             法             |
+
 |   Preist    |     牧师     |             牧             |
+
 |    Rouge    |  潜行者/盗贼 |             贼             |
+
 |   Paladin   |    圣骑士    |             骑             |
+
 |   Warlock   |     术士     |             术             |
+
 |    Druid    |    德鲁伊    |             德             |
+
 |   Hunter    |     猎人     |             猎             |
+
 |   Shaman    |     战士     |             战             |
+
 |   Warrior   |   萨满祭祀   |             萨             |
+
 | Demo Hunter |   恶魔猎手   |             瞎             |
+
 +-------------+--------------+----------------------------+
 
 How to know what profile or rar used for what deck?
