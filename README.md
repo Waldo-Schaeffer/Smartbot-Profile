@@ -18,7 +18,11 @@ How can I get the newest profile?
 	>[Click here to send E-mail to me](mailto:administrator@sunguanqi.com) "Do not send spam to me!!!"
 2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 1102704028 to dvisory / consultative.
 	>[Click here to Download OICQ/QQ Page](https://im.qq.com/download/)
+	
 	>[Click here to Download OICQ/QQ For Windows](https://dldir1.qq.com/qqfile/QQIntl/QQi_PC/QQIntl2.11.exe)
+	
 	>[Click here to Download OICQ/QQ For Android](https://down.qq.com/qqweb/QQ_1/android_apk/Android_6.0.3.6604_537064871.apk)
+	
 	>[Click here to Download OICQ/QQ For Iphone](https://itunes.apple.com/cn/app/id710380093?mt=8)
+	
 	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
