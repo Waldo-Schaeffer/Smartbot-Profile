@@ -19,7 +19,8 @@ Are you sure that you want to continue ? By clicking yes, you accept to take the
 ---------------------------
 
 Deck Language Comparison Table (You also can seach in DLCT.csv File)
-	>![Profession Name Table](./DLCT.png)
+
+![Profession Name Table](./DLCT.png)
 
  * 版权信息
  * https://github.com/Waldo-Schaeffer
