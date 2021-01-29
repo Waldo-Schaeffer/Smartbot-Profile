@@ -50,6 +50,6 @@ How can I get the newest profile?
  * 版权信息
  * https://github.com/Waldo-Schaeffer
  * https://gitee.com/m586/Smartbot-Profile
- * Copyleft 2016 - 2020 SunGuanqi. All Lefts Reserved
- * Attribution 4.0 International (CC BY 4.0)
+ * Copyleft 2016 - 2021 SunGuanqi. All Lefts Reserved
+ * Attribution 4.0 International (CC-BY-SA 4.0)
  * 使用时请遵守知识共享署名 4.0 国际许可协议，且不可删除本版权信息
