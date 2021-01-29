@@ -20,9 +20,13 @@ Are you sure that you want to continue ? By clicking yes, you accept to take the
 
 炉石传说Smartbot机器人的留牌策略，这里只会存放一到两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
 
+添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
+
 this only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
 
-this only put 3 month or 2 version ago's profild and mulligan. The newest profile was CHARGE!!
+this only put 1 month or 1 version ago's profild and mulligan. The newest profile was CHARGE!!
+
+add two new profiles about improve Rush for test. testing profile is free.
 
 How to know what profile or rar used for what deck?
 
