@@ -18,7 +18,7 @@ Are you sure that you want to continue ? By clicking yes, you accept to take the
 
 ---------------------------
 
-炉石传说Smartbot机器人的留牌策略，这里只会存放两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
+炉石传说Smartbot机器人的留牌策略，这里只会存放一到两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
 
 this only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
 
