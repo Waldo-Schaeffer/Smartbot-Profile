@@ -178,44 +178,44 @@ namespace SmartBotProfiles
             // p.CastWeaponsModifiers.AddOrUpdate(Card.Cards.DRG_025, new Modifier(-80));//海盗之锚 Ancharrr  ID：DRG_025
 			
 			//提高背刺 Backstab ID：CS2_072针对特定随从的优先级
-			p.CastSpellsModifiersAddOrUpdate(Card.Cards.CS2_072, new Modifier(-50,Card.Cards.CS2_121));//霜狼步兵 Frostwolf Grunt ID：CS2_121
+			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.CS2_072, new Modifier(-50,Card.Cards.CS2_121));//霜狼步兵 Frostwolf Grunt ID：CS2_121
 			
 			//闷棍 Sap ID：EX1_581不打回去的怪（除非对面手牌满了）
 			//Bot.Log("对手手牌数为：" + board.EnemyCardCount);
 			if (board.EnemyCardCount < 10){
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_517));//影光学者 Shadowlight Scholar ID：SCH_517
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_703));//灵魂学家玛丽希亚 Soulciologist Malicia ID：SCH_703
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_526));//巴罗夫领主 Lord Barov ID：SCH_526
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_507));//导师火心 Instructor Fireheart ID：SCH_507
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_141));//高阶修士奥露拉 High Abbess Alura ID：SCH_141
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_351));//詹迪斯·巴罗夫 Jandice Barov ID：SCH_351
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_181));//高阶女巫维洛 Archwitch Willow ID：SCH_181
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_162));//维克图斯 Vectus ID：SCH_162
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_334));//女伯爵莉亚德琳 Lady Liadrin ID：BT_334
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_270));//织法巨龙玛里苟斯 Malygos, Aspect of Magic ID：DRG_270
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_037));//菲里克·飞刺 Flik Skyshiv ID：DRG_037
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_238));//考古专家雷诺 Reno the Relicologist ID：ULD_238
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DAL_546));//咖啡师林彻 Barista Lynchen ID：DAL_546
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_198));//娜塔莉·塞林 Natalie Seline ID：EX1_198
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_099));//克罗斯·龙蹄 Kronx Dragonhoof ID：DRG_099
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_517));//影光学者 Shadowlight Scholar ID：SCH_517
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_703));//灵魂学家玛丽希亚 Soulciologist Malicia ID：SCH_703
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_526));//巴罗夫领主 Lord Barov ID：SCH_526
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_507));//导师火心 Instructor Fireheart ID：SCH_507
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_141));//高阶修士奥露拉 High Abbess Alura ID：SCH_141
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_351));//詹迪斯·巴罗夫 Jandice Barov ID：SCH_351
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_181));//高阶女巫维洛 Archwitch Willow ID：SCH_181
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_162));//维克图斯 Vectus ID：SCH_162
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_334));//女伯爵莉亚德琳 Lady Liadrin ID：BT_334
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_270));//织法巨龙玛里苟斯 Malygos, Aspect of Magic ID：DRG_270
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_037));//菲里克·飞刺 Flik Skyshiv ID：DRG_037
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_238));//考古专家雷诺 Reno the Relicologist ID：ULD_238
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DAL_546));//咖啡师林彻 Barista Lynchen ID：DAL_546
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_198));//娜塔莉·塞林 Natalie Seline ID：EX1_198
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_099));//克罗斯·龙蹄 Kronx Dragonhoof ID：DRG_099
 				
 				//杀千刀的不闷棍
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_082));//黏指狗头人 Kobold Stickyfinger ID：DRG_082
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_558));//哈里森·琼斯 Harrison Jones ID：EX1_558
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_066));//酸性沼泽软泥怪 Acidic Swamp Ooze ID：EX1_066
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.NEW1_025));//血帆海盗 Bloodsail Corsair ID：NEW1_025
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_082));//黏指狗头人 Kobold Stickyfinger ID：DRG_082
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_558));//哈里森·琼斯 Harrison Jones ID：EX1_558
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_066));//酸性沼泽软泥怪 Acidic Swamp Ooze ID：EX1_066
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.NEW1_025));//血帆海盗 Bloodsail Corsair ID：NEW1_025
 				
 				//要命的不闷棍
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_055));//藏宝匪贼 Hoard Pillager ID：DRG_055
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_704));//铸魂宝石匠 Soulshard Lapidary ID：SCH_704
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_224));//尼索格 Nithogg ID：DRG_224
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_026));//疯狂巨龙死亡之翼 Deathwing, Mad Aspect ID：DRG_026
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_003));//了不起的杰弗里斯 Zephrys the Great ID：ULD_003
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_156));//恐龙大师布莱恩 Dinotamer Brann ID：ULD_156
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_055));//藏宝匪贼 Hoard Pillager ID：DRG_055
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_704));//铸魂宝石匠 Soulshard Lapidary ID：SCH_704
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_224));//尼索格 Nithogg ID：DRG_224
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_026));//疯狂巨龙死亡之翼 Deathwing, Mad Aspect ID：DRG_026
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_003));//了不起的杰弗里斯 Zephrys the Great ID：ULD_003
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_156));//恐龙大师布莱恩 Dinotamer Brann ID：ULD_156
 				
 				//给圣骑士加BUFF的不闷棍
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_026));//奥尔多真理追寻者 Aldor Truthseeker ID：BT_026
-				p.CastSpellsModifiersAddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_020));//奥尔多侍从 Aldor Attendant ID：BT_020
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_026));//奥尔多真理追寻者 Aldor Truthseeker ID：BT_026
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_020));//奥尔多侍从 Aldor Attendant ID：BT_020
 			}
 			
 			//优先闷棍对象
