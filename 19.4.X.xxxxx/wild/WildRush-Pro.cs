@@ -228,39 +228,46 @@ namespace SmartBotProfiles
             p.CastMinionsModifiers.AddOrUpdate(Card.Cards.SCH_428, new Modifier(-40));//博学者普克尔特 Lorekeeper Polkelt ID：SCH_428 
             p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_173, new Modifier(250));//维西纳 Vessina ID：ULD_173
 			
-			//如果下一轮可以斩杀对面提高洛欧塞布 Loatheb  ID：FP1_030
-			    int myAttack = 0;
-                int enemyAttack = 0;
+			//如果对面是德，随从大于等于4，优先解场
+			if (board.EnemyAbility.Template.Id == Card.Cards.HERO_06bp
+			   && board.MinionEnemy.Count >= 4
+			)
+			{
+				p.GlobalAggroModifier = 40;
+			}
+			
+				int myAttack = 0;
+				int enemyAttack = 0;
 
-                if (board.MinionFriend != null)
-                {
-                    for (int x = 0; x < board.MinionFriend.Count; x++)
-                    {
-                        myAttack += board.MinionFriend[x].CurrentAtk;
-                    }
-                }
+				if (board.MinionFriend != null)
+				{
+					for (int x = 0; x < board.MinionFriend.Count; x++)
+					{
+						myAttack += board.MinionFriend[x].CurrentAtk;
+					}
+				}
 
-                if (board.MinionEnemy != null)
-                {
-                    for (int x = 0; x < board.MinionEnemy.Count; x++)
-                    {
-                        enemyAttack += board.MinionEnemy[x].CurrentAtk;
-                    }
-                }
+				if (board.MinionEnemy != null)
+				{
+					for (int x = 0; x < board.MinionEnemy.Count; x++)
+					{
+						enemyAttack += board.MinionEnemy[x].CurrentAtk;
+					}
+				}
 
-                if (board.WeaponEnemy != null)
-                {
-                    enemyAttack += board.WeaponEnemy.CurrentAtk;
-                }
+				if (board.WeaponEnemy != null)
+				{
+					enemyAttack += board.WeaponEnemy.CurrentAtk;
+				}
 
-                if ((int)board.EnemyClass == 2 || (int)board.EnemyClass == 7 || (int)board.EnemyClass == 8)
-                {
-                    enemyAttack += 1;
-                }
-                else if ((int)board.EnemyClass == 6)
-                {
-                    enemyAttack += 2;
-                }
+				if ((int)board.EnemyClass == 2 || (int)board.EnemyClass == 7 || (int)board.EnemyClass == 8)
+				{
+					enemyAttack += 1;
+				}
+				else if ((int)board.EnemyClass == 6)
+				{
+					enemyAttack += 2;
+				}
 			//如果下一轮可以斩杀对面提高洛欧塞布 Loatheb  ID：FP1_030
 			if (board.HasCardInHand(Card.Cards.FP1_030)//洛欧塞布 Loatheb  ID：FP1_030
 				&& !board.MinionEnemy.Any(x => x.IsTaunt)
@@ -492,47 +499,6 @@ namespace SmartBotProfiles
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.OG_310, new Modifier(220));//夜色镇执法官 Steward of Darkshire ID：OG_310
 			}
 			
-			//如果对面是德，随从大于等于4，优先解场
-			if (board.EnemyAbility.Template.Id == Card.Cards.HERO_06bp
-			   && board.MinionEnemy.Count >= 4
-			)
-			{
-				p.GlobalAggroModifier = 40;
-			}
-			
-				int myAttack = 0;
-				int enemyAttack = 0;
-
-				if (board.MinionFriend != null)
-				{
-					for (int x = 0; x < board.MinionFriend.Count; x++)
-					{
-						myAttack += board.MinionFriend[x].CurrentAtk;
-					}
-				}
-
-				if (board.MinionEnemy != null)
-				{
-					for (int x = 0; x < board.MinionEnemy.Count; x++)
-					{
-						enemyAttack += board.MinionEnemy[x].CurrentAtk;
-					}
-				}
-
-				if (board.WeaponEnemy != null)
-				{
-					enemyAttack += board.WeaponEnemy.CurrentAtk;
-				}
-
-				if ((int)board.EnemyClass == 2 || (int)board.EnemyClass == 7 || (int)board.EnemyClass == 8)
-				{
-					enemyAttack += 1;
-				}
-				else if ((int)board.EnemyClass == 6)
-				{
-					enemyAttack += 2;
-				}
-				
 				//奥秘体系
                 ////对面没有奥秘，不下张杰督察
                 if (!board.SecretEnemy
