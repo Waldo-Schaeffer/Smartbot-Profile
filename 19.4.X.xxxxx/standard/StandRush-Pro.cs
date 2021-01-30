@@ -112,9 +112,10 @@ namespace SmartBotProfiles
         {
 
 
-
+			//用BaseProfile函数调用加载云端的Rush策略
             var p = new ProfileParameters(BaseProfile.Rush);
             p.DiscoverSimulationValueThresholdPercent = 10;
+			
             //自定义命名
 			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(50));//幸运币 The Coin  ID：GAME_005
 			int a = (board.HeroFriend.CurrentHealth + board.HeroFriend.CurrentArmor) - BoardHelper.GetEnemyHealthAndArmor(board);//敌我血量差
@@ -393,6 +394,14 @@ namespace SmartBotProfiles
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_703t, new Modifier(200));//死斗场管理者（已腐蚀） Pit Master ID：DMF_703t
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_706t, new Modifier(200));//大帐决斗者 Pavilion Duelist ID：DMF_706t
 				//Bot.Log("对面是萨满要优先解掉野兔、死斗场决斗者");
+			}
+			
+			//如果对面是萨满，需要优先解掉大眼睛
+			if (board.EnemyClass == Card.CClass.SHAMAN
+			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_709)
+			){
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_709, new Modifier(200));//巨型图腾埃索尔 Grand Totem Eys'or ID：DMF_709
+				//Bot.Log("对面是萨满优先解掉大眼睛");
 			}
 			
 			//如果对面是瞎子提高血法师威胁值
