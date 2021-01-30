@@ -12,7 +12,7 @@
 ---------------------------
 Warning !
 ---------------------------
-Using this software is against 'Activision Blizzard Inc.' TOS/EULA.
+Using SmartBot and this Profile is against 'Activision Blizzard Inc.' TOS/EULA.
 
 Are you sure that you want to continue ? By clicking yes, you accept to take the full responsibility on your usage of this software and you certify that you have full knowledge that the use of this software can lead to a rupture of your personal contract with 'Activision Blizzard Inc.'
 
