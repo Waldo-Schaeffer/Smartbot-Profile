@@ -161,15 +161,15 @@ namespace SmartBotProfiles
 			//记牌器相关
 			
 			//灵魂残片 Soul Fragment ID：SCH_307t
-			Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.SCH_307t) + "个灵魂残片");
+			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.SCH_307t) + "个灵魂残片");
 			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.SCH_307t) + "个灵魂残片");
 			
 			//炸弹 Bomb ID：BOT_511t
-			Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.BOT_511t) + "个炸弹");
+			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.BOT_511t) + "个炸弹");
 			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.BOT_511t) + "个炸弹");
 			
 			//信天翁 Albatross ID：DRG_071t
-			Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.DRG_071t) + "个信天翁");
+			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.DRG_071t) + "个信天翁");
 			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.DRG_071t) + "个信天翁");
 			
             //具体策略
@@ -292,6 +292,44 @@ namespace SmartBotProfiles
 				//Bot.Log("5费之前不打通道");
 			}
 			
+			//场上随从大于3不下终极随从
+			if(board.MinionFriend.Count > 3){
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.BT_019t, new Modifier(999));//终极莫戈尔格 Murgurgle Prime ID：BT_019t
+			}else{
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.BT_019t, new Modifier(15));//终极莫戈尔格 Murgurgle Prime ID：BT_019t
+			}
+			
+			//对面随从数量大于3，提高暗月兔子的优先级
+			//暗月兔子 Darkmoon Rabbit ID：DMF_070
+			if(board.MinionEnemy.Count >=3){
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.DMF_070, new Modifier(-200));//暗月兔子 Darkmoon Rabbit ID：DMF_070
+			}
+			
+			//提高对面终极随从的威胁值
+				
+			//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_004, new Modifier(200));
+			//灵魂之匣 Reliquary of Souls ID：BT_197
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_197, new Modifier(200));
+			//星术师索兰莉安 Astromancer Solarian ID：BT_028
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_028, new Modifier(200));
+			//莫戈尔·莫戈尔格 Murgur Murgurgle ID：BT_019
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_019, new Modifier(200));
+			//坎雷萨德·埃伯洛克 Kanrethad Ebonlocke ID：BT_309
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_309, new Modifier(200));
+			//孢子首领姆希菲 Archspore Msshi'fn ID：BT_136
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_136, new Modifier(200));
+			//莫顶级捕食者兹克索尔 Zixor, Apex Predator ID：BT_210
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_210, new Modifier(200));
+			//阿卡玛 Akama ID：BT_713
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_713, new Modifier(200));
+			//瓦丝琪女士 Lady Vashj ID：BT_109
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_109, new Modifier(200));
+			//卡加斯·刃拳 Kargath Bladefist ID：BT_123
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123, new Modifier(200));
+			//终极卡加斯 Kargath Prime ID：BT_123t
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123t, new Modifier(200));
+			
             //随从优先解
             //提高战斗邪犬威胁值
             p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_351, new Modifier(200));
@@ -365,6 +403,10 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_230, new Modifier(200));
 			//纳兹曼尼织血者 Nazmani Bloodweaver ID：DMF_120
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_120, new Modifier(200));
+			//加基森拍卖师 Gadgetzan Auctioneer ID：EX1_095
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_095, new Modifier(200));
+			//菲里克·飞刺 Flik Skyshiv ID：DRG_037
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_037, new Modifier(200));
 			
 			//如果对面是猎人，需要提高矮人神射手的威胁值
 			if (board.EnemyClass == Card.CClass.HUNTER
@@ -380,6 +422,14 @@ namespace SmartBotProfiles
 			){
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_350, new Modifier(199));//魔杖窃贼 Wand Thief ID：SCH_350
 				//Bot.Log("对面是潜行者要优先解掉魔杖窃贼");
+			}
+			
+			//如果对面是贼，需要提高狐人老千的威胁值
+			if (board.EnemyClass == Card.CClass.ROGUE
+			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_511)
+			){
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_511, new Modifier(199));//狐人老千 Foxy Fraud ID：DMF_511
+				//Bot.Log("对面是潜行者要优先解掉狐人老千");
 			}
 			
 			//如果对面是萨满，需要提高沙漠野兔的威胁值
