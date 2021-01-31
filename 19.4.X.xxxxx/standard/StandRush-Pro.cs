@@ -405,8 +405,12 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_120, new Modifier(200));
 			//加基森拍卖师 Gadgetzan Auctioneer ID：EX1_095
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_095, new Modifier(200));
+			//终极卡加斯 Kargath Prime ID：BT_123t
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123t, new Modifier(200));
 			//菲里克·飞刺 Flik Skyshiv ID：DRG_037
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_037, new Modifier(200));
+			//死亡守望者 Deathwarden ID：YOP_012
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_012, new Modifier(200));
 			
 			//如果对面是猎人，需要提高矮人神射手的威胁值
 			if (board.EnemyClass == Card.CClass.HUNTER
