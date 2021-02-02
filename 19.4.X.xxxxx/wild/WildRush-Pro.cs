@@ -802,6 +802,12 @@ namespace SmartBotProfiles
 			{
 				return board.HeroEnemy.CurrentHealth + board.HeroEnemy.CurrentArmor;
 			}
+			
+			//得到友方的血量和护甲之和
+			public static int GetFriendHealthAndArmor(Board board)
+			{
+				return board.HeroFriend.CurrentHealth + board.HeroFriend.CurrentArmor;
+			}
 
 			//得到自己的法强
 			public static int GetSpellPower(Board board)
