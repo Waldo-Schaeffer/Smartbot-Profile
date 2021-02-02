@@ -22,7 +22,9 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
 
-add two new profiles about improve Rush for test. testing profile is free.
+The newest profile was CHARGE!!
+
+Add two new profiles about improve Rush for test. testing profile is free.
 
 Deck Language Comparison Table (You also can seach in DLCT.csv File)
 

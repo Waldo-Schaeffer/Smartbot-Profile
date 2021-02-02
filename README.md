@@ -24,11 +24,11 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
 
-this only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
+This only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
 
-this only put 1 month or 1 version ago's profild and mulligan. The newest profile was CHARGE!!
+This only put 1 month or 1 version ago's profild and mulligan. The newest profile was CHARGE!!
 
-add two new profiles about improve Rush for test. testing profile is free.
+Add two new profiles about improve Rush for test. testing profile is free.
 
 How to know what profile or rar used for what deck?
 
