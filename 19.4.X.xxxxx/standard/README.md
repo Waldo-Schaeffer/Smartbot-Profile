@@ -25,6 +25,8 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
 
+Note：VOP==>Darkmoon Races Mini-Set==>暗月马戏团竞速赛迷你版本
+
 The newest profile was CHARGE!!Also u can buy the unzip password and my github link for sell.
 
 How can I get the newest profile?
