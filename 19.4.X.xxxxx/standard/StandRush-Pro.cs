@@ -233,6 +233,7 @@ namespace SmartBotProfiles
 			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_044));//任务达人 Questing Adventurer ID：EX1_044
 			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_613));//艾德温·范克里夫 Edwin VanCleef ID：EX1_613
 			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.ULD_438));//萨赫特的傲狮 Salhet's Pride ID：ULD_438
+			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.YOP_004));//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
 			
 			//如果对面是圣骑士还要沉默亡语过牌
 			if (board.EnemyClass == Card.CClass.PALADIN){
@@ -259,7 +260,10 @@ namespace SmartBotProfiles
 
             //法术
 
-            p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(50));//幸运币 The Coin  ID：GAME_005、
+            p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(50));//幸运币 The Coin  ID：GAME_005
+			
+			//提高导师火心 Instructor Fireheart ID：SCH_507发现的卡牌的优先级
+            p.CastSpellsModifiers.AddOrUpdate(Card.Cards.SCH_507e, new Modifier(-550));//炽热连击！ Hot Streak! ID：SCH_507e
 
 
             //随从优先值
@@ -405,8 +409,6 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_120, new Modifier(200));
 			//加基森拍卖师 Gadgetzan Auctioneer ID：EX1_095
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_095, new Modifier(200));
-			//终极卡加斯 Kargath Prime ID：BT_123t
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123t, new Modifier(200));
 			//菲里克·飞刺 Flik Skyshiv ID：DRG_037
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_037, new Modifier(200));
 			//死亡守望者 Deathwarden ID：YOP_012
