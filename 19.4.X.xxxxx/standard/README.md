@@ -20,11 +20,29 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 ---------------------------
 
+最新的策略是收费的，需要解码密码的可以给我发送邮件咨询。你可以使用我的Github链接和解压密码进行二次销售。 我的邮邮箱地址是：administrator@sunguanqi.com.
+	>[点击此处给我发送电子邮件](mailto:administrator@sunguanqi.com) "请不要给我发送垃圾邮件!!!"
+
 添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
 
-The newest profile was CHARGE!!
+The newest profile was CHARGE!!Also u can buy the unzip password and my github link for sell.
 
-Add two new profiles about improve Rush for test. testing profile is free.
+How can I get the newest profile?
+
+1. If you can't speak Chinese you can use English to send a E-mail to me to advisory / consultative. my E-mail is administrator@sunguanqi.com.
+	>[Click here to send me an E-mail](mailto:administrator@sunguanqi.com) "Do not send spam to me!!!"
+2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 1102704028 to dvisory / consultative.
+	>[Click here to Download OICQ/QQ Page](https://im.qq.com/download/)
+	
+	>[Click here to Download OICQ/QQ For Windows](https://dldir1.qq.com/qqfile/QQIntl/QQi_PC/QQIntl2.11.exe)
+	
+	>[Click here to Download OICQ/QQ For Android](https://down.qq.com/qqweb/QQ_1/android_apk/Android_6.0.3.6604_537064871.apk)
+	
+	>[Click here to Download OICQ/QQ For iPhone](https://itunes.apple.com/cn/app/id710380093?mt=8)
+	
+	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
+
+Add Rush-Pro Profile about improve Rush for test. testing profile is free.
 
 Deck Language Comparison Table (You also can seach in DLCT.csv File)
 

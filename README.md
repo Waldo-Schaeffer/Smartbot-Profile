@@ -28,7 +28,7 @@ This only put old profile who i used to help wirmate update SmartBot AI or study
 
 This only put 1 month or 1 version ago's profild and mulligan. The newest profile was CHARGE!!
 
-Add two new profiles about improve Rush for test. testing profile is free.
+Add two new profiles who named Rush-Pro about improve Rush for test. testing profile is free.
 
 How to know what profile or rar used for what deck?
 
