@@ -1,7 +1,7 @@
 ;Frost DMF Ramp Paladin
 
 [info]
-version = 0002 (February, 2nd 2021)
+version = 0001 (January, 31st 2021)
 name = DMF Ramp Paladin
 
 [combo]
@@ -170,7 +170,7 @@ name = DMF Ramp Paladin
 	opp_PALADIN = 130
 	opp_PRIEST = 74
 	opp_ROGUE = 130
-	opp_SHAMAN = 74
+	opp_SHAMAN = -65
 	opp_WARLOCK = 74
 	opp_WARRIOR = 74
 ;High Abbess Alura
@@ -182,12 +182,12 @@ name = DMF Ramp Paladin
 	class_ANY = 0
 	pCard_YOP_031 = -91
 	opp_DEMONHUNTER = 130
-	opp_DRUID = 130
+	opp_DRUID = 74
 	opp_HUNTER = -65
 	opp_MAGE = -65
 	opp_PALADIN = -65
 	opp_PRIEST = -65
-	opp_ROGUE = 130
+	opp_ROGUE = 74
 	opp_SHAMAN = -65
 	opp_WARLOCK = -65
 	opp_WARRIOR = -65
@@ -238,19 +238,17 @@ name = DMF Ramp Paladin
 ; ============
 ;High Abbess Alura
 	[card_SCH_141]
-	class_ANY = 225
-	;opp_DEMONHUNTER = 149
-	;opp_DRUID = 149
-	;opp_HUNTER = 149
-	;opp_MAGE = 149
-	;opp_PALADIN = 149
-	;opp_PRIEST = 149
-	;opp_ROGUE = 149
-	;opp_SHAMAN = 149
-	;opp_WARLOCK = 149
-	;opp_WARRIOR = 149
-	;Wandmaker
-	;pCard_SCH_160 = 51
+	class_ANY = 0
+	opp_DEMONHUNTER = 149
+	opp_DRUID = 149
+	opp_HUNTER = 149
+	opp_MAGE = 149
+	opp_PALADIN = 149
+	opp_PRIEST = 149
+	opp_ROGUE = 149
+	opp_SHAMAN = 149
+	opp_WARLOCK = 149
+	opp_WARRIOR = 149
 
 	coin = 51
 	combo = -100
@@ -271,17 +269,6 @@ name = DMF Ramp Paladin
 	pCard_SCH_141 = -91
 
 	coin = 51
-	combo = -100
-
-;Circus Amalgam
-	[card_DMF_532]
-	class_ANY = 0
-	pCard_DMF_532 = -91
-	opp_DEMONHUNTER = 225
-	opp_DRUID = 225
-	opp_ROGUE = 225
-	
-	;coin = 51
 	combo = -100
 
 ; ============
