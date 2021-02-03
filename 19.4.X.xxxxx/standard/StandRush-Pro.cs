@@ -413,6 +413,8 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_037, new Modifier(200));
 			//死亡守望者 Deathwarden ID：YOP_012
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_012, new Modifier(200));
+			//决斗大师莫扎奇 Mozaki, Master Duelist ID：SCH_400
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_400, new Modifier(200));
 			
 			//如果对面是猎人，需要提高矮人神射手的威胁值
 			if (board.EnemyClass == Card.CClass.HUNTER
