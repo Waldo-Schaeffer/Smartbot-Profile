@@ -26,17 +26,18 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 This only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
 
-This only put 1 month or 1 version ago's profild and mulligan. The newest profile was CHARGE!!
+This access is for 1 month or 1 version of previous profiles and mulligans. The newest ones are FOR A FEE!
 
-Add two new profiles who named Rush-Pro about improve Rush for test. testing profile is free.
+Add two new profiles named Rush-Pro are to improve Bot's Rush one and are for testing purpose
+Testing profile is for free.
 
 How to know what profile or rar used for what deck?
 
 1. Use Google Translate to translate filename without last word. For example: 祈求牧==>祈求==Google Translate==>Invoke
-2. Use last word find profession in The Image or PCC.csv File. For example: 祈求牧==>牧==>牧师==>Preist
+2. Use last word find profession in The Image or PCC.csv File. For example: 祈求牧==>牧==>牧师==>Priest
 ![Profession Name Table](./PCC.png)
-3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Preist==>Invoke Preist
-4. Some deck need change words with means.  For example: Invoke Preist==>Galakrond always need Invoke==>Galakrond Preist
+3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Preist==>Invoke Priest
+4. Some deck need change words with means.  For example: Invoke Priest==>Galakrond always need Invoke==>Galakrond Priest
 
 How can I get the newest profile?
 
