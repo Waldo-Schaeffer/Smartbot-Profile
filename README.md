@@ -28,8 +28,8 @@ This only put old profile who i used to help wirmate update SmartBot AI or study
 
 This access is for 1 month or 1 version of previous profiles and mulligans. The newest ones are FOR A FEE!
 
-Add two new profiles named Rush-Pro are to improve Bot's Rush one and are for testing purpose
-Testing profile is for free.
+Added two new profiles named Rush-Pro. They need to improve regular Midrange-Rush profile and are for testing purpose only.
+Testing profiles are for free.
 
 How to know what profile or rar used for what deck?
 
