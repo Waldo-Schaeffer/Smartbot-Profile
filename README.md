@@ -36,7 +36,7 @@ How to know what profile or rar used for what deck?
 1. Use Google Translate to translate filename without last word. For example: 祈求牧==>祈求==Google Translate==>Invoke
 2. Use last word find profession in The Image or PCC.csv File. For example: 祈求牧==>牧==>牧师==>Priest
 ![Profession Name Table](./PCC.png)
-3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Preist==>Invoke Priest
+3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Priest==>Invoke Priest
 4. Some deck need change words with means.  For example: Invoke Priest==>Galakrond always need Invoke==>Galakrond Priest
 
 How can I get the newest profile?
