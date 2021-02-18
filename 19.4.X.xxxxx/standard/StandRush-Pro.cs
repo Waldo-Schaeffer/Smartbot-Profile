@@ -92,7 +92,6 @@ namespace SmartBotProfiles
         private static readonly Dictionary<Card.Cards, int> _spellDamagesTable = new Dictionary<Card.Cards, int>
         {
             {Card.Cards.CS2_093, 2},//奉献 Consecration  ID：CS2_093
-		    {Card.Cards.SCH_248, 1},//甩笔侏儒 Pen Flinger ID：SCH_248
 		    {Card.Cards.BT_100, 3},//毒蛇神殿传送门 Serpentshrine Portal  ID：BT_100
             {Card.Cards.EX1_238, 3},//闪电箭 Lightning Bolt  ID：EX1_238
             {Card.Cards.EX1_241, 5},//熔岩爆裂 Lava Burst  ID：EX1_241
@@ -101,7 +100,7 @@ namespace SmartBotProfiles
 			//sm血色 偷你妈的头 by 77
         };
 		
-		//Rush-Pro for 19.4HS in Standard
+		//Rush-Pro for 19.4.1HS in Standard
 
 
         //攻击模式
@@ -127,10 +126,10 @@ namespace SmartBotProfiles
 			if (board.LockedMana == 0
 				&& board.OverloadedMana == 0){
 				guozai = false;
-				Bot.Log("我方法力水晶没有过载");
+				//Bot.Log("我方法力水晶没有过载");
 			}else{
 				guozai = true;
-				Bot.Log("我方法力水晶已经过载");
+				//Bot.Log("我方法力水晶已经过载");
 			}
 			
 			//卡片集合
@@ -277,7 +276,7 @@ namespace SmartBotProfiles
 			&& board.HasCardInHand(Card.Cards.SCH_351)
 			){
 				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.SCH_351, new Modifier(600));//詹迪斯·巴罗夫 Jandice Barov ID：SCH_351
-				Bot.Log("随从太多不用詹迪斯·巴罗夫");
+				//Bot.Log("随从太多不用詹迪斯·巴罗夫");
 			}
 			
 			// 自己场上没随从不下金牌猎手
@@ -467,7 +466,7 @@ namespace SmartBotProfiles
 			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.EX1_012)
 			){
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_012, new Modifier(199));//血法师萨尔诺斯 Bloodmage Thalnos ID：EX1_012
-				Bot.Log("对面是瞎子提高血法师威胁值");
+				//Bot.Log("对面是瞎子提高血法师威胁值");
 			}
 			
 			//提高空中炮艇 Skybarge ID：DRG_023威胁值
