@@ -1,0 +1,4 @@
+请删除SB下所有带SMK_YOP_Fish_Paladin的文件，否则起手留牌会报错
+另，希拉斯代码经常在线升级，每次更新请留意是否要重启SB否则有些代码不生效
+Please delete any file named "SMK_YOP_Fish_Paladin".
+这个策略必须要带2张鱼人为王、2张马戏团融合怪

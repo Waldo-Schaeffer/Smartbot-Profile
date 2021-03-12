@@ -1,0 +1,8 @@
+Date: 02-02-2021 V(57.00)
+
+Discover settings : EE_Discover.cs
+
+   Madness at the Darkmoon Faire
+------------------------------------
+              Added
+   The Darkmoon Races Mini-Set
