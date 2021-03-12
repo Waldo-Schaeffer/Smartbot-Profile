@@ -20,6 +20,7 @@ using SmartBot.Plugins.API;
  * 使用时请遵守知识共享署名 4.0 国际许可协议，且不可删除本版权信息
  * 
  */
+ 
 namespace SmartBotAPI.Plugins.API
 {
 
