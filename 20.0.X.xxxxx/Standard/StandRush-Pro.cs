@@ -100,7 +100,7 @@ namespace SmartBotProfiles
 			//sm血色 偷你妈的头 by 77
         };
 		
-		//Rush-Pro for 19.4.1HS in Standard
+		//Rush-Pro for 20.0HS in Standard
 
 
         //攻击模式
