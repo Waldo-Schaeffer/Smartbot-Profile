@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using SmartBot.Database;
@@ -115,6 +115,59 @@ namespace SmartBotProfiles
             var p = new ProfileParameters(BaseProfile.Rush);
             p.DiscoverSimulationValueThresholdPercent = 10;
 			
+			//贫瘠之地默认优先级-BAR
+			
+			//贫瘠之地铁匠 Barrens Blacksmith ID：BAR_073
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_073, new Modifier(200));
+			//十字路口哨所 Crossroads Watch Post ID：BAR_075
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_075, new Modifier(200));
+			//布鲁坎 Bru'kan ID：BAR_048
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_048, new Modifier(200));
+			//凯瑞尔·罗姆 Cariel Roame ID：BAR_902
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_902, new Modifier(200));
+			//战地医师老兵 Veteran Warmedic ID：BAR_878
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_878, new Modifier(200));
+			//腐烂的普雷莫尔 Plaguemaw the Rotting ID：BAR_540
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_540, new Modifier(200));
+			//钢鬃卫兵 Razormane Battleguard ID：BAR_537
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_537, new Modifier(200));
+			//勘探者车队 Prospector's Caravan ID：BAR_033
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_033, new Modifier(200));
+			//科卡尔驯犬者 Kolkar Pack Runner ID：BAR_035
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_035, new Modifier(200));
+			//士兵车队 Soldier's Caravan ID：BAR_871
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_871, new Modifier(200));
+			//占卜者车队 Soothsayer's Caravan ID：BAR_312
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_312, new Modifier(200));
+			//高效八爪机器人 Efficient Octo-bot ID：BAR_320
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_320, new Modifier(200));
+			//鱼人宝宝车队 Tinyfin's Caravan ID：BAR_043
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_043, new Modifier(200));
+			//火焰术士弗洛格尔 Firemancer Flurgl ID：BAR_860
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_860, new Modifier(200));
+			//剂师车队 Apothecary's Caravan ID：BAR_912
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_912, new Modifier(200));			
+			//甜水鱼人斥候 Lushwater Scout ID：BAR_063
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_063, new Modifier(200));	
+			//前沿哨所 Far Watch Post ID：BAR_074
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_074, new Modifier(200));	
+			//古夫·符文图腾 Guff Runetotem ID：BAR_720
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_720, new Modifier(200));	
+			//塔维什·雷矛 Tavish Stormpike ID：BAR_038
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_038, new Modifier(200));	
+			//奥术发光体 Arcane Luminary ID：BAR_545
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_545, new Modifier(200));	
+			//霜舌半人马 Rimetongue ID：BAR_888 
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_888, new Modifier(200));	
+			//原野联络人 Field Contact ID：BAR_317
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_317, new Modifier(200));	
+			//莫尔杉哨所 Mor'shan Watch Post ID：BAR_076
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_076, new Modifier(200));	
+			//十字路口大嘴巴 Crossroads Gossiper ID：BAR_890
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_890, new Modifier(200));	
+			//贫瘠之地诱捕者 Barrens Trapper ID：BAR_082
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_082, new Modifier(200));
+			
             //自定义命名
 			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(50));//幸运币 The Coin  ID：GAME_005
 			int a = (board.HeroFriend.CurrentHealth + board.HeroFriend.CurrentArmor) - BoardHelper.GetEnemyHealthAndArmor(board);//敌我血量差
@@ -157,88 +210,24 @@ namespace SmartBotProfiles
 			//法术提供的可用总水晶上限
 			//Bot.Log("血色的马上限是:" + manaAvailable);
 			
-			//记牌器相关
-			
-			//灵魂残片 Soul Fragment ID：SCH_307t
-			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.SCH_307t) + "个灵魂残片");
-			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.SCH_307t) + "个灵魂残片");
-			
-			//炸弹 Bomb ID：BOT_511t
-			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.BOT_511t) + "个炸弹");
-			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.BOT_511t) + "个炸弹");
-			
-			//信天翁 Albatross ID：DRG_071t
-			//Bot.Log("我方牌库中有" + board.Deck.Count(card => CardTemplate.LoadFromId(card).Id == Card.Cards.DRG_071t) + "个信天翁");
-			//Bot.Log("对方牌库中有" + board.EnemyDeckCount(card => CardTemplate.LoadFromId(card).Id == Card.Cards.DRG_071t) + "个信天翁");
-			
             //具体策略
 
             //武器优先值
-            // p.CastWeaponsModifiers.AddOrUpdate(Card.Cards.DRG_025, new Modifier(-80));//海盗之锚 Ancharrr  ID：DRG_025
-			
-			//提高背刺 Backstab ID：CS2_072针对特定随从的优先级
-			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.CS2_072, new Modifier(-50,Card.Cards.CS2_121));//霜狼步兵 Frostwolf Grunt ID：CS2_121
-			
-			//闷棍 Sap ID：EX1_581不打回去的怪（除非对面手牌满了）
-			//Bot.Log("对手手牌数为：" + board.EnemyCardCount);
-			if (board.EnemyCardCount < 10){
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_517));//影光学者 Shadowlight Scholar ID：SCH_517
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_703));//灵魂学家玛丽希亚 Soulciologist Malicia ID：SCH_703
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_526));//巴罗夫领主 Lord Barov ID：SCH_526
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_507));//导师火心 Instructor Fireheart ID：SCH_507
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_141));//高阶修士奥露拉 High Abbess Alura ID：SCH_141
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_351));//詹迪斯·巴罗夫 Jandice Barov ID：SCH_351
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_181));//高阶女巫维洛 Archwitch Willow ID：SCH_181
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_162));//维克图斯 Vectus ID：SCH_162
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_334));//女伯爵莉亚德琳 Lady Liadrin ID：BT_334
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_270));//织法巨龙玛里苟斯 Malygos, Aspect of Magic ID：DRG_270
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_037));//菲里克·飞刺 Flik Skyshiv ID：DRG_037
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_238));//考古专家雷诺 Reno the Relicologist ID：ULD_238
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DAL_546));//咖啡师林彻 Barista Lynchen ID：DAL_546
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_198));//娜塔莉·塞林 Natalie Seline ID：EX1_198
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_099));//克罗斯·龙蹄 Kronx Dragonhoof ID：DRG_099
-				
-				//杀千刀的不闷棍
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_082));//黏指狗头人 Kobold Stickyfinger ID：DRG_082
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_558));//哈里森·琼斯 Harrison Jones ID：EX1_558
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.EX1_066));//酸性沼泽软泥怪 Acidic Swamp Ooze ID：EX1_066
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.NEW1_025));//血帆海盗 Bloodsail Corsair ID：NEW1_025
-				
-				//要命的不闷棍
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_055));//藏宝匪贼 Hoard Pillager ID：DRG_055
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.SCH_704));//铸魂宝石匠 Soulshard Lapidary ID：SCH_704
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_224));//尼索格 Nithogg ID：DRG_224
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.DRG_026));//疯狂巨龙死亡之翼 Deathwing, Mad Aspect ID：DRG_026
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_003));//了不起的杰弗里斯 Zephrys the Great ID：ULD_003
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.ULD_156));//恐龙大师布莱恩 Dinotamer Brann ID：ULD_156
-				
-				//给圣骑士加BUFF的不闷棍
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_026));//奥尔多真理追寻者 Aldor Truthseeker ID：BT_026
-				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(300,Card.Cards.BT_020));//奥尔多侍从 Aldor Attendant ID：BT_020
-			}
-			
-			//优先闷棍对象
-			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(-80, Card.Cards.BT_025));//智慧圣契 Libram of Wisdom ID：BT_025
-			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(-40, Card.Cards.EX1_044));//任务达人 Questing Adventurer ID：EX1_044
-			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.EX1_581, new Modifier(-40, Card.Cards.EX1_613));//艾德温·范克里夫 Edwin VanCleef ID：EX1_613
-			
+            // p.CastWeaponsModifiers.AddOrUpdate(Card.Cards.DRG_025, new Modifier(-80));//海盗之锚 Ancharrr  ID：DRG_025			
 			
 			//优先沉默对象
 			
-			//铁喙猫头鹰 Ironbeak Owl ID：CS2_203
+			//铁喙猫头鹰 Ironbeak Owl ID：CORE_CS2_203
 			//智慧圣契 Libram of Wisdom ID：BT_025
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-80, Card.Cards.BT_025));//优先沉默圣骑士的圣契
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.SCH_621));//优先沉默血骨傀儡 Rattlegore ID：SCH_621
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_044));//任务达人 Questing Adventurer ID：EX1_044
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_613));//艾德温·范克里夫 Edwin VanCleef ID：EX1_613
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.ULD_438));//萨赫特的傲狮 Salhet's Pride ID：ULD_438
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.YOP_004));//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
+			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-80, Card.Cards.BT_025));//优先沉默圣骑士的圣契
+			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-40, Card.Cards.SCH_621));//优先沉默血骨傀儡 Rattlegore ID：SCH_621
+			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-40, Card.Cards.YOP_004));//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
 			
 			//如果对面是圣骑士还要沉默亡语过牌
 			if (board.EnemyClass == Card.CClass.PALADIN){
-				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_096));//战利品贮藏者 Loot Hoarder ID：EX1_096
-				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.EX1_012));//血法师萨尔诺斯 Bloodmage Thalnos ID：EX1_012
-				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CS2_203, new Modifier(-40, Card.Cards.DMF_194));//赤鳞驯龙者 Redscale Dragontamer ID：DMF_194
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-40, Card.Cards.CORE_EX1_096));//战利品贮藏者 Loot Hoarder ID：CORE_EX1_096
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-40, Card.Cards.CORE_EX1_012));//血法师萨尔诺斯 Bloodmage Thalnos ID：CORE_EX1_012
+				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.CORE_CS2_203, new Modifier(-40, Card.Cards.DMF_194));//赤鳞驯龙者 Redscale Dragontamer ID：DMF_194
 				//Bot.Log("对面是圣骑士，优先沉默亡语过牌");
 			}
 			
@@ -254,7 +243,7 @@ namespace SmartBotProfiles
 
 
             //武器攻击保守性
-            p.WeaponsAttackModifiers.AddOrUpdate(Card.Cards.CS2_091, new Modifier(0));//圣光的正义 Light's Justice  ID：CS2_091
+            p.WeaponsAttackModifiers.AddOrUpdate(Card.Cards.CS2_091, new Modifier(0));//圣光的正义(待定) Light's Justice  ID：CS2_091
             p.WeaponsAttackModifiers.AddOrUpdate(Card.Cards.BT_011t, new Modifier(0));//迟到的正义 Overdue Justice  ID：BT_011t
 
             //法术
@@ -308,10 +297,17 @@ namespace SmartBotProfiles
 				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.DMF_070, new Modifier(-200));//暗月兔子 Darkmoon Rabbit ID：DMF_070
 			}
 			
-			//提高对面终极随从的威胁值
-				
-			//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_004, new Modifier(200));
+			//随从优先解
+			
+			//核心
+			//提高雏龙（暂定）
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_116t, new Modifier(200));
+			//提高铸甲师 Armorsmith ID：CORE_EX1_402
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.CORE_EX1_402, new Modifier(200));
+			//加基森拍卖师 Gadgetzan Auctioneer ID：CORE_EX1_095
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.CORE_EX1_095, new Modifier(200));
+			
+			//外域的灰烬-BT
 			//灵魂之匣 Reliquary of Souls ID：BT_197
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_197, new Modifier(200));
 			//星术师索兰莉安 Astromancer Solarian ID：BT_028
@@ -332,96 +328,67 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123, new Modifier(200));
 			//终极卡加斯 Kargath Prime ID：BT_123t
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_123t, new Modifier(200));
-			
-            //随从优先解
-            //提高战斗邪犬威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_351, new Modifier(200));
-            //炸弹牛仔应该解
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOD_024, new Modifier(200));
-            //提高相位威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_252, new Modifier(200));
-            //提高热气球威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_057, new Modifier(200));
-            //提高空中私掠者威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOD_016, new Modifier(200));
-            //提高搬水工威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_270, new Modifier(200));
-            //提高凶恶的废钢猎犬威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_759, new Modifier(200));
-            //提高神殿狂战士威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_185, new Modifier(200));
-            //大法师瓦格斯
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_558, new Modifier(200));
-            //提高厄运信天翁
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_071, new Modifier(200));
-            //提高高级跟班厄尔克
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOD_035, new Modifier(200));
-            //提高狂奔的魔刃豹
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOD_006, new Modifier(200));
-            //提高卡雷苟斯
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_609, new Modifier(200));
-            //提高希亚玛特
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_178, new Modifier(200));
-            //提高齐恩瓦拉
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_104, new Modifier(200));
-             //提高雏龙
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_116t, new Modifier(200));
-            //提高铸甲师
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_402, new Modifier(200));
-            //提高无面渗透者威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_039, new Modifier(200));
-            //提高鲨鱼之灵威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.TRL_092, new Modifier(200));
-            //提高灭龙弩炮威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_256, new Modifier(200));
-            //提高流放者奥图里斯威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_937, new Modifier(200));
-            //提高暗影珠宝师汉纳尔威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_188, new Modifier(200));
-            //提高萨特监工威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_352, new Modifier(200));
-            //提高怒鳞纳迦威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_355, new Modifier(200));
-            //提高特殊坐骑商人威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_774, new Modifier(200));
-            //提高鲨鳍后援威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.TRL_507, new Modifier(200));
-            //提高小鬼骑士 Tiny Knight of Evil  ID：AT_021威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.AT_021, new Modifier(200));
-            //提高对空奥术法师 Arcane Flakmage  ID：ULD_240威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_240, new Modifier(200));
-            //提高巫师学徒 Sorcerer's Apprentice  ID：EX1_608威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_608, new Modifier(200));
-            //提高银色神官帕尔崔丝 Confessor Paletress ID：AT_018威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.AT_018, new Modifier(200));
-			//提高连环腿大师 Whirlkick Master ID：ULD_231威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_231, new Modifier(200));
-			//提高了不起的杰弗里斯 Zephrys the Great ID：ULD_003威胁值
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_003, new Modifier(200));
+			//提高战斗邪犬威胁值
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_351, new Modifier(200));
+			//提高流放者奥图里斯威胁值
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_937, new Modifier(200));
+			//提高暗影珠宝师汉纳尔威胁值
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_188, new Modifier(200));
+			//提高萨特监工威胁值
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_352, new Modifier(200));
+			//提高怒鳞纳迦威胁值
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_355, new Modifier(200));
+			//强能箭猪 Augmented Porcupine  ID：BT_201
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_201, new Modifier(200));
+			//提高黑眼
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_307, new Modifier(200));
+			//提高废料场巨像 Scrapyard Colossus  ID：BT_155
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_155, new Modifier(200));
+			//改进型恐惧魔王 Enhanced Dreadlord  ID：BT_304
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_304, new Modifier(200));
 			//塞泰克织巢者 Sethekk Veilweaver ID：BT_254
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_254, new Modifier(199));
-			//艾德温·范克里夫 Edwin VanCleef ID：EX1_613
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_613, new Modifier(200));
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_254, new Modifier(200));
+			
+			//通灵学院-SCH
+			//决斗大师莫扎奇 Mozaki, Master Duelist ID：SCH_400
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_400, new Modifier(200));
+			//狐人淬毒师 Vulpera Toxinblade  ID：SCH_519
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_519, new Modifier(200));
+			//贪婪的书虫 Voracious Reader ID：SCH_142
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_142, new Modifier(200));
+			
+			//暗月马戏团-DMF
 			//伊格诺斯 Il'gynoth ID：DMF_230
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_230, new Modifier(200));
 			//纳兹曼尼织血者 Nazmani Bloodweaver ID：DMF_120
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_120, new Modifier(200));
-			//加基森拍卖师 Gadgetzan Auctioneer ID：EX1_095
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_095, new Modifier(200));
-			//菲里克·飞刺 Flik Skyshiv ID：DRG_037
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_037, new Modifier(200));
+			
+			//暗月竞速赛-YOP
 			//死亡守望者 Deathwarden ID：YOP_012
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_012, new Modifier(200));
-			//决斗大师莫扎奇 Mozaki, Master Duelist ID：SCH_400
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_400, new Modifier(200));
+			//铁锈特使拉斯维克斯 Envoy Rustwix ID：YOP_004
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_004, new Modifier(200));
+
+
 			
-			//如果对面是猎人，需要提高矮人神射手的威胁值
-			if (board.EnemyClass == Card.CClass.HUNTER
-			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DRG_253)
-			){
-				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_253, new Modifier(200));//矮人神射手 Dwarven Sharpshooter ID：DRG_253
-				//Bot.Log("对面是猎人要优先解掉神射手");
-			}
+			
+			//贫瘠之地的锤炼-BAR
+			//塔姆辛·罗姆 Tamsin Roame ID：BAR_918
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_918, new Modifier(200));
+			//火焰术士弗洛格尔 Firemancer Flurgl ID：BAR_860
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_860, new Modifier(200));
+			//古夫·符文图腾 Guff Runetotem ID：BAR_720
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_720, new Modifier(200));
+			//塔维什·雷矛 Tavish Stormpike ID：BAR_038
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_038, new Modifier(200));
+			//洛卡拉 Rokara ID：BAR_847
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_847, new Modifier(200));
+			//腐烂的普雷莫尔 Plaguemaw the Rotting ID：BAR_540
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_540, new Modifier(200));
+			//凯瑞尔·罗姆 Cariel Roame ID：BAR_902
+			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_902, new Modifier(200));
+			
+			//针对职业
 			
 			//如果对面是贼，需要提高魔杖窃贼的威胁值
 			if (board.EnemyClass == Card.CClass.ROGUE
@@ -441,12 +408,10 @@ namespace SmartBotProfiles
 			
 			//如果对面是萨满，需要提高沙漠野兔的威胁值
 			if (board.EnemyClass == Card.CClass.SHAMAN
-			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.ULD_719)
-			|| board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_703)
+			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_703)
 			|| board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_703t)
 			|| board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.DMF_706t)
 			){
-				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.ULD_719, new Modifier(200));//沙漠野兔 Desert Hare ID：ULD_719
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_703, new Modifier(200));//死斗场管理者 Pit Master ID：DMF_703
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_703t, new Modifier(200));//死斗场管理者（已腐蚀） Pit Master ID：DMF_703t
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_706t, new Modifier(200));//大帐决斗者 Pavilion Duelist ID：DMF_706t
@@ -463,54 +428,34 @@ namespace SmartBotProfiles
 			
 			//如果对面是瞎子提高血法师威胁值
 			if (board.EnemyClass == Card.CClass.DEMONHUNTER
-			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.EX1_012)
+			&& board.MinionEnemy.Any(minion => minion.Template.Id == Card.Cards.CORE_EX1_012)
 			){
-				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_012, new Modifier(199));//血法师萨尔诺斯 Bloodmage Thalnos ID：EX1_012
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.CORE_EX1_012, new Modifier(199));//血法师萨尔诺斯 Bloodmage Thalnos ID：CORE_EX1_012
 				//Bot.Log("对面是瞎子提高血法师威胁值");
 			}
 			
-			//提高空中炮艇 Skybarge ID：DRG_023威胁值
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_023, new Modifier(200));
-			//提高邪能领主贝图格 Fel Lord Betrug  ID：DAL_607威胁值
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_607, new Modifier(200));
-			//提高强能箭猪 Augmented Porcupine  ID：BT_201威胁值
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_201, new Modifier(200));
-			//提高黑眼
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_307, new Modifier(200));
-			//提高废料场巨像 Scrapyard Colossus  ID：BT_155
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_155, new Modifier(200));
-			//改进型恐惧魔王 Enhanced Dreadlord  ID：BT_304
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_304, new Modifier(200));
+			//如果对面是法师提高法强随从威胁值
+			if (board.EnemyClass == Card.CClass.MAGE){
+				//p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_245, new Modifier(200));//卷轴管理者 Steward of Scrolls ID：SCH_245
+				//p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BT_028, new Modifier(200));//星术师索兰莉安 Astromancer Solarian ID：BT_028
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_273, new Modifier(200));//莱斯·霜语 Ras Frostwhisper ID：SCH_273
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOP_021, new Modifier(200));//被禁锢的凤凰 Imprisoned Phoenix ID：YOP_021
+				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_310, new Modifier(200));//研究伙伴 Lab Partner ID：SCH_310
+				//Bot.Log("对面是法师提高法强随从威胁值");
+			}
 			
-			//狐人淬毒师 Vulpera Toxinblade  ID：SCH_519
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_519, new Modifier(200));
-			//贪婪的书虫 Voracious Reader ID：SCH_142
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.SCH_142, new Modifier(200));
-			//任务达人 Questing Adventurer ID：EX1_044
-			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.EX1_044, new Modifier(200));
-           
-            //提高空中炮艇 Skybarge ID：DRG_023威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_023, new Modifier(200));
-            //提高邪能领主贝图格 Fel Lord Betrug  ID：DAL_607威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DAL_607, new Modifier(200));
-
-            //降低攻击优先值
-            //降低资深探险者 Licensed Adventurer ID：YOD_030威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.YOD_030, new Modifier(70));
-            //降低龙裔小鬼威胁值
-            p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_238t12t2, new Modifier(60));
+			
+			
+			//降低攻击优先值
+			//降低龙裔小鬼威胁值
+			//p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DRG_238t12t2, new Modifier(60));
+			
+			
 			
 			//如果对面是进化萨，要考虑希拉斯转过去后要卖掉它
 			if (board.EnemyClass == Card.CClass.SHAMAN){
 				p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.DMF_074, new Modifier(200));
 			}
-			
-			//泰坦跟班相关
-			p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_616, new Modifier(200, Card.Cards.ULD_276));//泰坦造物跟班 Titanic Lackey ID：ULD_616 ，怪盗图腾 EVIL Totem  ID：ULD_276
-            p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_616, new Modifier(200, Card.Cards.NEW1_009));//泰坦造物跟班 Titanic Lackey ID：ULD_616 ，治疗图腾 Healing Totem  ID：NEW1_009
-            p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_616, new Modifier(200, Card.Cards.CS2_050));//泰坦造物跟班 Titanic Lackey ID：ULD_616 ，灼热图腾 Searing Totem  ID：CS2_050
-            p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_616, new Modifier(200, Card.Cards.CS2_051));//泰坦造物跟班 Titanic Lackey ID：ULD_616 ，石爪图腾 Stoneclaw Totem  ID：CS2_051
-            p.CastMinionsModifiers.AddOrUpdate(Card.Cards.ULD_616, new Modifier(200, Card.Cards.CS2_052));//泰坦造物跟班 Titanic Lackey ID：ULD_616 ，空气之怒图腾 Wrath of Air Totem  ID：CS2_052
 
             return p;
         }
