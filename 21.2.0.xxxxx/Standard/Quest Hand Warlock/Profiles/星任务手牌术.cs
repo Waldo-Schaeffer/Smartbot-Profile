@@ -98,7 +98,7 @@ namespace SmartBotProfiles
             {Card.Cards.CS2_037, 1},//冰霜震击 Frost Shock  ID：CS2_037
             {Card.Cards.BT_495, 4},//刃缚精锐 Glaivebound Adept ID：BT_495
         };
-		//version 1.2 (2021-09-17)
+		//version 1.3 (2021-09-23)
 
 
         //攻击模式
@@ -167,7 +167,7 @@ namespace SmartBotProfiles
 			p.OnBoardBoardEnemyMinionsModifiers.AddOrUpdate(Card.Cards.BAR_082, new Modifier(200));
 			
             //自定义命名
-			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(50));//幸运币 The Coin  ID：GAME_005
+			p.CastSpellsModifiers.AddOrUpdate(Card.Cards.GAME_005, new Modifier(150));//幸运币 The Coin  ID：GAME_005
 			int a = (board.HeroFriend.CurrentHealth + board.HeroFriend.CurrentArmor) - BoardHelper.GetEnemyHealthAndArmor(board);//敌我血量差
 			
 			
@@ -333,6 +333,14 @@ namespace SmartBotProfiles
 				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.YOP_033, new Modifier(-200));//赛车回火 Backfire ID：YOP_033
 				p.CastHeroPowerModifier.AddOrUpdate(Card.Cards.CS2_056_H1, new Modifier(-100));//生命分流 Life Tap ID：HERO_07bp
 			}
+			
+			//亡者复生BUG
+			//坟场怪数量==0,不用亡者复生
+			if (board.HasCardInHand(Card.Cards.SCH_514)//亡者复生 Raise Dead  ID：SCH_514
+			&& board.FriendGraveyard.Count(card => CardTemplate.LoadFromId(card).Type == Card.CType.MINION) ==0){
+				p.CastSpellsModifiers.AddOrUpdate(Card.Cards.SCH_514, new Modifier(9999));//亡者复生 Raise Dead  ID：SCH_514
+			}
+			
 			//对方没有随从降低333优先级
 			if (board.MinionEnemy.Count == 0){
 				p.CastMinionsModifiers.AddOrUpdate(Card.Cards.BAR_916, new Modifier(150));//血岩碎片刺背野猪人 Blood Shard Bristleback ID：BAR_916
