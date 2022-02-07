@@ -20,7 +20,7 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 ---------------------------
 
-炉石传说Smartbot机器人的留牌策略，这里只会存放一到两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
+炉石传说Smartbot机器人的留牌策略，这里只会存放一到两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群952364237咨询。
 
 添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
 
@@ -43,7 +43,7 @@ How can I get the newest profile?
 
 1. If you can't speak Chinese you can use English to send a E-mail to me to advisory / consultative. my E-mail is administrator@sunguanqi.com.
 	>[Click here to send me an E-mail](mailto:administrator@sunguanqi.com) "Do not send spam to me!!!"
-2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 1102704028 to dvisory / consultative.
+2. If you can Chinese, Download OICQ/QQ and join Group. Group id is 952364237 to dvisory / consultative.
 	>[Click here to Download OICQ/QQ Page](https://im.qq.com/download/)
 	
 	>[Click here to Download OICQ/QQ For Windows](https://dldir1.qq.com/qqfile/QQIntl/QQi_PC/QQIntl2.11.exe)
