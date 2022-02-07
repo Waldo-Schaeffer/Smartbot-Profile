@@ -20,24 +20,14 @@ If you don't accept it. PLEASE DO NOT DOWNLOAD OR COPY ANY CODE OR FILE IN THIS 
 
 ---------------------------
 
-炉石传说Smartbot机器人的留牌策略，这里只会存放一到两个版本以前用的留牌策略文件和所有版本弃坑的策略，想要最新的策略加QQ群1102704028咨询。
+最新的策略是收费的，需要解码密码的可以给我发送邮件咨询。你可以使用我的Github链接和解压密码进行二次销售。 我的邮邮箱地址是：administrator@sunguanqi.com.
+	>[点击此处给我发送电子邮件](mailto:administrator@sunguanqi.com) "请不要给我发送垃圾邮件!!!"
 
-添加了针对Rush策略的改进版策略。不针对任何卡组。仅用作测试。测试策略免费
+广告：B站直播间：608700，QQ群：952364237
 
-This only put old profile who i used to help wirmate update SmartBot AI or study to write profile.
+Note：VOP==>Darkmoon Races Mini-Set==>暗月马戏团竞速赛迷你版本
 
-This access is for 1 month or 1 version of previous profiles and mulligans. The newest ones are FOR A FEE!
-
-Added two new profiles named Rush-Pro. They need to improve regular Midrange-Rush profile and are for testing purpose only.
-Testing profiles are for free.
-
-How to know what profile or rar used for what deck?
-
-1. Use Google Translate to translate filename without last word. For example: 祈求牧==>祈求==Google Translate==>Invoke
-2. Use last word find profession in The Image or PCC.csv File. For example: 祈求牧==>牧==>牧师==>Priest
-![Profession Name Table](./PCC.png)
-3. Regroup 2 words. For example: 祈求牧==step 1 and step 2==>Invoke/Priest==>Invoke Priest
-4. Some deck need change words with means.  For example: Invoke Priest==>Galakrond always need Invoke==>Galakrond Priest
+The newest profile was CHARGE!!Also u can buy the unzip password and my github link for sell.
 
 How can I get the newest profile?
 
@@ -53,6 +43,12 @@ How can I get the newest profile?
 	>[Click here to Download OICQ/QQ For iPhone](https://itunes.apple.com/cn/app/id710380093?mt=8)
 	
 	>[Click here to Download OICQ/QQ For Mac](https://im.qq.com/macqq/)
+
+Add Rush-Pro Profile about improve Rush for test. testing profile is free.
+
+Deck Language Comparison Table (You also can seach in DLCT.csv File)
+
+![Profession Name Table](./DLCT.png)
 
  * 版权信息
  * https://github.com/Waldo-Schaeffer

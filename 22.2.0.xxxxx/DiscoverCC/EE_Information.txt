@@ -1,0 +1,19 @@
+Date: Friday, 24 September 2021 V(90.29)
+
+Discover settings : EE_Discover.cs
+
+          Current Cards:
+----------------------------------------
+Specials: Kazakus, Golem Shaper
+          Guess the Weight
+Extras: Back-up files for missing cards
+           4 files 6281 cards
+Standard 52 files, 2151 cards
+           discover.ini 980 cards
+Wild 137 files, 10166 cards
+           discover.ini 3333 cards
+Arena 53 files, 1018 cards
+           discover.ini 1586 cards
+Classic 1 files, 38 cards
+           discover.ini 382 cards
+Total 243 files, 13373 cards

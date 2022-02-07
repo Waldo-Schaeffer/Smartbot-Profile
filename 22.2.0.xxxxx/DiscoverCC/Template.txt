@@ -1,0 +1,14 @@
+using System.Collections.Generic;
+using SmartBot.Discover;
+using SmartBot.Plugins.API;
+
+namespace Discover
+{
+    internal class TestHandler : DiscoverPickHandler
+    {
+        public Card.Cards HandlePickDecision(Card.Cards originCard, List<Card.Cards> choices, Board board)
+        {
+            return choices[0];
+        }
+    }
+}
